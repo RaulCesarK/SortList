@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		body {
+                text-align: center;
+            }
+            
+            h2 {
+             
+            }
+
+            h3 {
+                color: red;
+            }
+         
+         /*
+            #p_1 {
+            	background-image: url("cartas/carta1.png");
+            }
+
+            #p_2 {
+            	background-image: url("cartas/carta2.png");
+            }
+            #p_3 {
+            	background-image: url("cartas/carta3.png");
+            }
+            #p_4 {
+            	background-image: url("cartas/carta4.png");
+            }
+            #p_5 {
+            	background-image: url("cartas/carta5.png");
+            }
+            #p_6 {
+            	background-image: url("cartas/carta6.png");
+            }
+            #p_7 {
+            	background-image: url("cartas/carta7.png");
+            }
+            #p_8 {
+            	background-image: url("cartas/carta8.png");
+            }
+            #p_9 {
+            	background-image: url("cartas/carta9.png");
+            }
+            #p_10 {
+            	background-image: url("cartas/carta10.png");
+            }
+            #p_11 {
+
+            	background-image: url("cartas/carta11.png");
+            }
+            #p_12 {
+            	background-image: url("cartas/carta12.png");
+            }
+
+
+	</style>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		
+		document.writeln("<h1>JOGUE TRUCO");
+
+		document.writeln("<h3>Cartas Sorteadas</h3>");
+
+		var cartas = new Array(12);
+
+		cartas.push("<img src='cartas/carta1.png>",
+			"<img src='cartas/carta2.png>",
+			"<img src='cartas/carta3.png>",
+			"<img src='cartas/carta4.png>",
+			"<img src='cartas/carta5.png>",
+			"<img src='cartas/carta6.png>",
+			"<img src='cartas/carta7.png>",
+			"<img src='cartas/carta8.png>",
+			"<img src='cartas/carta9.png>",
+			"<img src='cartas/carta10.png>",
+			"<img src='cartas/carta11.png>",
+			"<img src='cartas/carta12.png>"
+			);
+
+		var sorteio = new Array(12);
+
+		sorteio = sorteio.sort(function(a, b){return 0.5 - Math.random()});
+
+
+		for(i=0;i<4;i++){
+			document.write("<h2>Cartas do Jogador " + (i+1) + ":</h2>");
+			document.write("<p>" + cartas[sorteio[i]] +"</p>");
+			document.write("<p>" + cartas[sorteio[i + 1]] +"</p>");
+			document.write("<p>" + cartas[sorteio[i + 2]] +"</p>");
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
