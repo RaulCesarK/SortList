@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		
+		var numeros = [];
+
+		document.writeln("<h1>Números da Mega-Sena:");
+
+		for (var i = 1; i <= 60; i++) {
+		   numeros.push(i);
+		}
+
+
+		numeros = numeros.sort(function(a, b){return 0.5 - Math.random()});
+
+		
+		for(i=0; i<6;i++) {
+		
+			document.writeln("<p>" +numeros[i] + " " + "</p>");
+		}
+
+	
+	</script>
+
+	<style type="text/css">
+		
+		h1 {
+			text-align: center;
+
+		}
+
+		p {
+			text-align: center;
+			display: inline;
+			font-size: 20px;
+			font-family: arial;
+			color: green;
+		}
+	</style>
+</head>
+<body>
+
+</body>
+</html>
