@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+
+	<script type="text/javascript">
+		
+		var numero = prompt("Digite o número de pessoas participantes:");
+		var nomes = new Array(numero);
+
+		for(i=0;i<numero;i++){
+			nomes[i] = prompt("Nome do participante")
+		}
+
+		var nomesSortidos = nomes.sort(function(a, b){return 0.5 - Math.random()});
+
+		document.writeln("<h1>Ordem de apresetação dos grupos:");
+
+		for(i=0;i<numero;i++){
+			document.write("<p>" + (i+1) + "°-" +  nomesSortidos[i] + "</p>");
+		}
+
+	
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
